@@ -1,0 +1,29 @@
+hadoop启动：
+start-all.sh
+
+hadoop停止：
+stop-all.sh
+
+mysql启动：
+mysql -uroot -proot
+
+关闭安全模式：
+hadoop dfsadmin -safemode forceExit
+
+hive启动：
+hive --service hiveserver2 &
+beeline
+!connect jdbc:hive2://localhost:10000/default root root
+
+spark启动：
+start-master.sh
+spark-sql
+
+mysql安装：
+useSSL=False
+
+主机网址：
+192.168.73.150
+
+关闭安全模式：
+hdfs dfsadmin -safemode leave

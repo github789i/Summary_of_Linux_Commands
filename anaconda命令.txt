@@ -1,0 +1,49 @@
+anaconda命令：
+
+1、切换环境：
+conda activate python3_7(环境名)
+查看所有虚拟环境：
+conda info --envs
+创建虚拟环境：
+conda create -n env-name python=3.8
+conda config --add channels https://repo.continuum.io/pkgs/free/
+conda config --add channels https://repo.continuum.io/pkgs/main/
+conda config --set show_channel_urls yes
+删除虚拟环境：
+conda remove -n env-name --all
+
+
+2、设置镜像源
+
+# 添加清华源
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+
+
+# 设置搜索时显示通道地址
+conda config --set show_channel_urls yes
+
+3、安装库
+conda install cudatoolkit=10.1
+conda install cudnn=7.6
+pip install --upgrade --ignore-installed -i https://pypi.mirrors.ustc.edu.cn/simple paddle-pipelines
+pip install -i https://pypi.mirrors.ustc.edu.cn/simple 库名  pyinstaller
+pyinstaller --distpath C:/Users/LJG --onefile ChatAPP.py
+pip install -i https://pypi.mirrors.ustc.edu.cn/simple -r requirements.txt
+
+
+4、查看
+pip list
+pip show PyQt5
+nvidia-smi：显卡资源查看
+
+5、卸载库
+pip uninstall torch
+
+Path:
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+
+补充：
+vscode切换环境
+ctrl+shift+p：python interpret
